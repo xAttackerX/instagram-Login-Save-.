@@ -36,9 +36,6 @@ echo '<dv style="font-size:4:1.10em;color:#595959"> By > inst acc / click - <a  
 if (isset($_POST['start'])) {
    $ps= $_POST['ck'];
    $us = $_POST['ck2'];
-
-   $username = 'dokok9j2';
-   $password = '2922rj92';
    $login = curl_init();  
    curl_setopt($login, CURLOPT_URL, "https://www.instagram.com/accounts/login/ajax/"); 
    curl_setopt($login, CURLOPT_RETURNTRANSFER, 1);
