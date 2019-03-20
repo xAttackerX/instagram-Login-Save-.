@@ -1,6 +1,6 @@
 
 <?php
-$z = 'https://www.instagram.com/cyber.thugz/';
+$z = 'https://www.instagram.com/cyber__thugz/';
 echo '<dv style="font-size:4:1.10em;color:white"> * التطبيق : </div>';
 echo '<dv style="font-size:4:1.10em;color:#595959"> By > inst acc / click - <a  style="font-size:1:1.1em ; font-style: italic;color:#ec1313" href="'.$z.'">@cyber.thugz</a> .! </div>'.'</p>';
 
